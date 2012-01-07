@@ -3,8 +3,10 @@ dataSource {
     driverClassName = "org.h2.Driver"
     username = "sa"
     password = ""
+    logSql = true
 }
 hibernate {
+	format_sql = true
     cache.use_second_level_cache = true
     cache.use_query_cache = true
     cache.region.factory_class = 'net.sf.ehcache.hibernate.EhCacheRegionFactory'
